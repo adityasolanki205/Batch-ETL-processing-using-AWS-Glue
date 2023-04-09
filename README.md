@@ -282,7 +282,7 @@ https://user-images.githubusercontent.com/56908240/230780977-f37bb645-d640-4793-
 
 
     
-    8. After successful Glue job run, we will create table in Data Catalog using AWS Crawler. This table will then be used by Athena to query data
+    8. Create table in Data Catalog using AWS Crawler. This table will then be used by Athena to query data
         
         - Goto Glue Data Catalogs and click on Crawlers
         
@@ -303,6 +303,19 @@ https://user-images.githubusercontent.com/56908240/230780977-f37bb645-d640-4793-
 
 
 https://user-images.githubusercontent.com/56908240/230784164-80ab7427-5b76-470b-a08b-f466601402d9.mp4
+
+    9. Verify the results on Athena.
+    
+        - Goto Athena and click on launch query editor
+        
+        - From Database, select the database we have created
+        
+        - From Tables and Views, select the Table which was created by Crawler
+        
+        - Click in the preview table and verify if data is correct.
+        
+        - Query Editor can also be used to run other queries.
+        
 
 
 
