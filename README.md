@@ -325,4 +325,7 @@ https://user-images.githubusercontent.com/56908240/230784560-8b53aeb1-ec03-425b-
 
 ## Credits
 1. Akash Nimare's [README.md](https://gist.github.com/akashnimare/7b065c12d9750578de8e705fb4771d2f#file-readme-md)
-2. [Apache Spark](https://spark.apache.org/)
+2. [AWS Glue Job with PySpark](https://medium.com/@yuvarajmailme/aws-glue-job-with-pyspark-505281890d45)
+3. [Understanding AWS Glue for ETL](https://ngugijoan.medium.com/understanding-aws-glue-for-etl-51db6561fe45)
+4. [Creating a Data Lake By Using AWS S3, Glue, and Athena](https://medium.com/@aliatakan/creating-a-data-lake-by-using-aws-s3-glue-and-athena-86e43738d8f2)
+5. [Apache Spark](https://spark.apache.org/)
