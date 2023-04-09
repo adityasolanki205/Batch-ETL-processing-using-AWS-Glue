@@ -314,13 +314,11 @@ https://user-images.githubusercontent.com/56908240/230784164-80ab7427-5b76-470b-
         
         - Click in the preview table and verify if data is correct.
         
-        - Query Editor can also be used to run other queries.
+        - Query Editor can also be used to run other queries and perform any OLAP processing.
         
 
 
 https://user-images.githubusercontent.com/56908240/230784560-8b53aeb1-ec03-425b-bff2-ccde41c2267b.mp4
-
-
 
 
 ## Credits
