@@ -273,7 +273,9 @@ https://user-images.githubusercontent.com/56908240/230778342-a3b64947-e940-42b4-
         
         - Click on save and run.
         
-        - Verify the job to check for any issues. If there are no issues, job will run successfully
+        - Verify the job to check for any issues. If there are no issues, job will run successfully.
+        
+        - Output csv file will be saved in the output S3 bucket.
         
 
 https://user-images.githubusercontent.com/56908240/230780977-f37bb645-d640-4793-897c-1c7108a75799.mp4
@@ -283,6 +285,21 @@ https://user-images.githubusercontent.com/56908240/230780977-f37bb645-d640-4793-
     8. After successful Glue job run, we will create table in Data Catalog using AWS Crawler. This table will then be used by Athena to query data
         
         - Goto Glue Data Catalogs and click on Crawlers
+        
+        - Give it a name and click next
+        
+        - Click on Add a data source. Select S3 as source, select the output S3 bucket Add an S3 data source
+        
+        - Click on next. Select the IAM role that we created and click next
+        
+        - Select the database we have created in previous step and click on next
+        
+        - Verify all the changes and click Create Crawler
+        
+        - Now click Run Crawler to run the job
+        
+        - After Successfull completion, a table will be created in the Database.
+        
 
 
 ## Credits
