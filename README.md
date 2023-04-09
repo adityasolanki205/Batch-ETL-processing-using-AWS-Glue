@@ -52,6 +52,9 @@ Below are the steps to setup the enviroment and run the codes:
     - Select Spark script editor
 
 
+https://user-images.githubusercontent.com/56908240/230775841-60e29f5e-411f-49a5-88e4-c03c3e9644e8.mp4
+
+
 4. **Reading data from S3 bucket**: To read the data we will use pyspark code. Here we will use SparkSession to create a dataframe by reading from a input bucket.
 
 ```python
