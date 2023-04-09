@@ -288,7 +288,7 @@ https://user-images.githubusercontent.com/56908240/230780977-f37bb645-d640-4793-
         
         - Give it a name and click next
         
-        - Click on Add a data source. Select S3 as source, select the output S3 bucket Add an S3 data source
+        - Click on Add a data source. Select S3 as source, select the output S3 bucket and click on Add an S3 data source
         
         - Click on next. Select the IAM role that we created and click next
         
