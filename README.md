@@ -234,7 +234,7 @@ To test the code we need to do the following:
         
     4. Create a S3 Storage Bucket by the name outputgluetesting in mumbai region. We will save output data here. 
 
-    4. Create IAM role to give Glue all the access required to perform the tasks. 
+    5. Create IAM role to give Glue all the access required to perform the tasks. 
         
         - To create a role, goto IAM from the console
         
@@ -251,44 +251,27 @@ https://user-images.githubusercontent.com/56908240/230778342-a3b64947-e940-42b4-
 
 
         
-    5. Create a Biquery dataset with the name GermanCredit and a table named German_Credit_final. 
-       This should be an empty table with schema as given below:
+    6. Create a database using Glue Data Catalog. This database will be used to fetch data from our Transformed dataset.   
        
-        Duration_month:INTEGER,
-        Credit_history:STRING,
-        Credit_amount:FLOAT,
-        Saving:STRING,
-        Employment_duration:STRING,
-        Installment_rate:INTEGER,
-        Personal_status:STRING,
-        Debtors:STRING,
-        Residential_Duration:INTEGER,
-        Property:STRING,
-        Age:INTEGER,
-        Installment_plans:STRING,
-        Housing:STRING,
-        Number_of_credits:INTEGER,
-        Job:STRING,
-        Liable_People:INTEGER,
-        Telephone:STRING,
-        Foreign_worker:STRING,
-        Classification:INTEGER,
-        Month:STRING,
-        Days:STRING,
-        File_month:STRING,
-        Version:STRING
+        - To create a database, goto Glue Data Catalog and click on Create Database. Verify the region selected is Mumbai on the console.
+        
+        - Provide any name for the database and click in Create Database.
     
-    6. Create a Dataproc cluster by using the command:
-        gcloud dataproc clusters create ${CLUSTER} \
-        --project=${PROJECT} \
-        --region=${REGION} \
-        --single-node 
+    7. Create a Glue Job to run the Python script to perform the transformations
+        
+        - Goto AWS Glue from console and click on ETL jobs
+        
+        - Select Spark script editor
+        
+        - Now boilerplate script will open. Copy the code present in batch.py from this repository and paste it on the script tab
+        
+        - Click on save.
+        
+        - It will throw error to change the names or Python job and Job id for glue. Make the changes and click in save and run
+        
+        - Verify the job to check for any issues. If there are no issues, job will run successfully
     
-    7. Create a PySpark Job to run the code:
-        gcloud dataproc jobs submit pyspark Batch.py \
-        --cluster=${CLUSTER} \
-        --region=${REGION} \
-        --jars=gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar
+    8. 
 
 
 ## Credits
