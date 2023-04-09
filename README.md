@@ -225,18 +225,15 @@ To test the code we need to do the following:
     1. Copy the repository in Cloud SDK using below command:
         git clone https://github.com/adityasolanki205/Batch-ETL-processing-using-AWS-Glue.git
     
-    2. Create a US Multiregional Storage Bucket by the name dataproc-testing-pyspark.
+    2. Create a S3 Storage Bucket by the name inputgluetesting in mumbai region.
     
-    3. Copy the data file in the cloud Bucket using the below command
+    3. Copy the data file in the cloud Bucket using the below command. To do that open the AWS CLI and use the commands below.
         cd Batch-Processing-using-Dataproc/data
-        gsutil cp german_data.csv gs://dataproc-testing-pyspark/
+        aws s3 cp german_data.csv s3://inputgluetesting/german_data.csv
         cd ..
+    4. Create a S3 Storage Bucket by the name outputgluetesting in mumbai region. We will save output data here. 
 
-    4. Create Temporary variables to hold GCP values
-        PROJECT=<project name>
-        BUCKET_NAME=dataproc-testing-pyspark
-        CLUSTER=testing-dataproc
-        REGION=us-central1
+    4. Create IAM role to give Glue all the access required to perform the tasks. 
         
     5. Create a Biquery dataset with the name GermanCredit and a table named German_Credit_final. 
        This should be an empty table with schema as given below:
