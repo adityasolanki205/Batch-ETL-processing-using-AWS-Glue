@@ -267,9 +267,15 @@ https://user-images.githubusercontent.com/56908240/230778342-a3b64947-e940-42b4-
         
         - Click on save.
         
-        - It will throw error to change the names or Python job and Job id for glue. Make the changes and click in save and run
+        - It will throw error. 
+        
+        - Change the ETL Job name, select the IAM role we created previously and change the name of the python job.
+        
+        - Click on save and run.
         
         - Verify the job to check for any issues. If there are no issues, job will run successfully
+        
+        
     
     8. 
 
