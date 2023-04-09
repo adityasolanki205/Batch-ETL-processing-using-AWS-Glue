@@ -246,6 +246,11 @@ To test the code we need to do the following:
         
         - Give this role a name and click on create role. 
         
+
+https://user-images.githubusercontent.com/56908240/230778342-a3b64947-e940-42b4-bb2d-3bb5be18ca4a.mp4
+
+
+        
     5. Create a Biquery dataset with the name GermanCredit and a table named German_Credit_final. 
        This should be an empty table with schema as given below:
        
