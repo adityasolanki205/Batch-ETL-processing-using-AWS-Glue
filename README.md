@@ -231,9 +231,20 @@ To test the code we need to do the following:
         cd Batch-Processing-using-Dataproc/data
         aws s3 cp german_data.csv s3://inputgluetesting/german_data.csv
         cd ..
+        
     4. Create a S3 Storage Bucket by the name outputgluetesting in mumbai region. We will save output data here. 
 
     4. Create IAM role to give Glue all the access required to perform the tasks. 
+        
+        - To create a role, goto IAM from the console
+        
+        - Click in create role
+        
+        - In use case, search for Glue and click next
+        
+        - In Permission Policy, select AmazonS3FullAccess, AWSGlueServiceRole  , AWSGlueConsoleFullAccess and click next
+        
+        - Give this role a name and click on create role. 
         
     5. Create a Biquery dataset with the name GermanCredit and a table named German_Credit_final. 
        This should be an empty table with schema as given below:
