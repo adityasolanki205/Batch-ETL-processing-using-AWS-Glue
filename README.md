@@ -1,5 +1,5 @@
 # ETL batch Processing using AWS Glue
-This is the part of **ETL processing AWS** Repository. Here we will try to learn basics of Apache Spark to create **Batch** jobs on AWS Glue. In this repo We will learn step by step process to create a batch job using [German Credit Risk](https://www.kaggle.com/uciml/german-credit). The complete process is divided into 6 parts:
+This is the part of **ETL processing in AWS** Repository. Here we will try to learn basics of Apache Spark to create **Batch** jobs on AWS Glue. In this repo We will learn step by step process to create a batch job using [German Credit Risk](https://www.kaggle.com/uciml/german-credit). The complete process is divided into 6 parts:
 
 1. **Creating S3 buckets**
 2. **Creating an IAM Role**
