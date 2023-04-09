@@ -36,7 +36,10 @@ job.init(args['JOB_NAME'], args)
 
 appName = "testing"
 master = "local"
-spark = SparkSession.builder.        appName(appName).        master(master).        getOrCreate()     
+spark = SparkSession.builder.\
+        appName(appName).\
+        master(master).\
+        getOrCreate()  
 
 bucket = "input-etl-glue"
 spark.conf.set('temporaryGcsBucket', bucket)
